@@ -1,0 +1,156 @@
+{
+    "credentials": {
+        "database_name": "stock_argentina_test",
+        "user_credentials": {
+            "user": "test_user",
+            "password": "test_user"
+        }
+    },
+    "tables_data": {
+        "INDICADORES": {
+            "url": "https://www.rava.com/empresas/indicadores.php",
+            "table_variables": {
+                "Date": "DATE", 
+                "Especie": "VARCHAR(255)", 
+                "Precio": "NUMERIC(6,2)", 
+                "Porcentaje_dia": "NUMERIC(4,2)",
+                "MM200_Var": "BIGINT", 
+                "Medias_moviles_Est": 
+                "VARCHAR(255)", 
+                "Medias_moviles_dias": "BIGINT", 
+                "Medias_moviles_precio": "NUMERIC(6,2)",
+                "Medias_moviles_var": "BIGINT", 
+                "MACD_Est": "VARCHAR(255)", 
+                "MACD_dias": "BIGINT", 
+                "MACD_precio": "NUMERIC(6,2)",
+                "MACD_var": "BIGINT", 
+                "SST": "BIGINT"
+            }
+        },
+        "PANEL_LIDER": {
+            "url": "https://www.rava.com/precios/panel.php?m=LID",
+            "table_variables": {
+                "Date": "DATE", 
+                "Especie": "VARCHAR(255)", 
+                "Ultimo": "NUMERIC(8,3)", 
+                "Porcentaje_dia": "NUMERIC(5,2)",
+                "Anterior": "NUMERIC(8,3)", 
+                "Apertura": "NUMERIC(8,3)", 
+                "Minimo": "NUMERIC(8,3)", 
+                "Maximo": "NUMERIC(8,3)", 
+                "Hora": "TIME",
+                "Volumen_nominal": "BIGINT", 
+                "Volumen_efectivo": "BIGINT"
+            }
+        },
+        "PANEL_GENERAL": {
+            "url": "https://www.rava.com/precios/panel.php?m=GEN",
+            "table_variables": {
+                "Date": "DATE", 
+                "Especie": "VARCHAR(255)", 
+                "Ultimo": "NUMERIC(8,3)", 
+                "Porcentaje_dia": "NUMERIC(5,2)",
+                "Anterior": "NUMERIC(8,3)", 
+                "Apertura": "NUMERIC(8,3)", 
+                "Minimo": "NUMERIC(8,3)", 
+                "Maximo": "NUMERIC(8,3)", 
+                "Hora": "TIME",
+                "Volumen_nominal": "BIGINT", 
+                "Volumen_efectivo": "BIGINT"
+            }
+        },
+        "ROFEX": {
+            "url": "https://www.rava.com/precios/panel.php?m=ROFEX",
+            "table_variables": {
+                "Date": "DATE", 
+                "Especie": "VARCHAR(255)", 
+                "Ultimo": "NUMERIC(8,3)", 
+                "Var_pesos": "NUMERIC(6,3)",
+                "Porcentaje_dia": "NUMERIC(4,2)", 
+                "Cierre": "NUMERIC(8,3)", 
+                "C_Compra": "BIGINT", 
+                "Of_Compra": "NUMERIC(8,3)",
+                "Of_Venta": "NUMERIC(8,3)", 
+                "C_Venta": "BIGINT", 
+                "Apertura": "NUMERIC(8,3)", 
+                "Minimo": "NUMERIC(8,3)", 
+                "Maximo": "NUMERIC(8,3)",
+                "Hora": "TIME", 
+                "Volumen": "BIGINT", 
+                "Vencimiento": "DATE"
+            }
+        },
+        "DOLAR": {
+            "url": "http://www.rava.com/",
+            "table_variables": {
+                "Date": "DATE", 
+                "Especie": "VARCHAR(255)", 
+                "Ultimo": "NUMERIC(5,2)", 
+                "Porcentaje_dia": "NUMERIC(5,1)",
+                "Porcentaje_mes": "NUMERIC(5,1)", 
+                "Porcentaje_año": "NUMERIC(5,1)"
+            }
+        },
+        "ADR": {
+            "url": "https://www.rava.com/precios/panel.php?m=ADRARG",
+            "table_variables": {
+                "Date": "DATE", 
+                "Especie": "VARCHAR(255)", 
+                "Nombre": "VARCHAR(255)", 
+                "Ultimo": "NUMERIC(8,3)",
+                "Porcentaje_dia": "NUMERIC(5,1)", 
+                "Porcentaje_mes": "NUMERIC(5,1)", 
+                "Porcentaje_año": "NUMERIC(5,1)", 
+                "Volumen": "BIGINT"
+            }
+        },
+        "cedear": {
+            "url": "https://www.rava.com/precios/panel.php?m=CED",
+            "table_variables": {
+                "Date": "DATE", 
+                "Especie": "VARCHAR(255)", 
+                "Ultimo": "NUMERIC(8,3)", 
+                "Porcentaje_dia": "NUMERIC(5,2)",
+                "Anterior": "NUMERIC(8,3)", 
+                "Apertura": "NUMERIC(8,3)", 
+                "Minimo": "NUMERIC(8,3)", 
+                "Maximo": "NUMERIC(8,3)", 
+                "Hora": "TIME",
+                "Volumen_nominal": "BIGINT", 
+                "Volumen_efectivo": "BIGINT"
+            }
+        },
+        "bonos": {
+            "url": "https://www.rava.com/precios/panel.php?m=BON",
+            "table_variables": {
+                "Date": "DATE", 
+                "Especie": "VARCHAR(255)", 
+                "Ultimo": "NUMERIC(8,3)", 
+                "Porcentaje_dia": "NUMERIC(5,2)",
+                "Anterior": "NUMERIC(8,3)", 
+                "Apertura": "NUMERIC(8,3)", 
+                "Minimo": "NUMERIC(8,3)", 
+                "Maximo": "NUMERIC(8,3)", 
+                "Hora": "TIME",
+                "Volumen_nominal": "BIGINT", 
+                "Volumen_efectivo": "BIGINT"
+            }
+        },
+        "opciones": {
+            "url": "https://www.rava.com/precios/panel.php?m=OPC",
+            "table_variables": {
+                "Date": "DATE", 
+                "Especie": "VARCHAR(255)", 
+                "Ultimo": "NUMERIC(8,3)", 
+                "Porcentaje_dia": "NUMERIC(5,2)",
+                "Anterior": "NUMERIC(8,3)", 
+                "Apertura": "NUMERIC(8,3)", 
+                "Minimo": "NUMERIC(8,3)", 
+                "Maximo": "NUMERIC(8,3)", 
+                "Hora": "TIME",
+                "Volumen_nominal": "BIGINT", 
+                "Volumen_efectivo": "BIGINT"
+            }
+        }
+    }
+}
